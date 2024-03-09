@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="annonce.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+       <!-- Header -->
+    <div class="header">
+        <nav class="nav">
+            <a class="nav_logo" href="#">RecruitMe</a>
+    
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Job offer</a>
+                    <!-- Sous-menu pour Services -->
+                    <div class="nav_link services">
+                        <a href="#">Services</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Candidate</a></li>
+                            <li><a href="#">Recruiter</a></li>
+                        </ul>
+                    </div>
+                    <!-- Fin Sous-menu -->
+                    <a href="#" class="nav_link">About us</a>
+                    <a href="#" class="nav_link">Contact</a>
+                </li>
+            </ul>
+    
+            <button class="btn" id="form-open">Login</button>
+        </nav>
+    </div>
+    
+    
+
+    <!-- <div class="filter">
+        <ul>
+            <li>
+                <div class="filter-container"></div>
+                    <button id="flter-dateposted" >
+                        <div class="filter-date-item">Dates</div>
+                        <div class="filter-date-icon">
+                            <svg viewBox="0 0 14 14" width="12px" height="12px" aria-hidden="true">
+                                <g>
+                                    <path d="M5,514,4,4,4-4H5Z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+                <ul>
+                    <li><a href="#">Dernieres 24 heures</a></li>
+                    <li><a href="#">3 jours</a></li>
+                    <li><a href="#">7 derniers  jours</a></li>
+                    <li><a href="#">Plus de 7 jours</a></li>
+                </ul>>
+            </li>
+            <li>
+                <div class="filter-container"></div>
+                    <button id="flter-jobtype" >
+                        <div class="filter-type-item">Dates</div>
+                        <div class="filter-type-icon">
+                            <svg viewBox="0 0 14 14" width="12px" height="12px" aria-hidden="true">
+                                <g>
+                                    <path d="M5,514,4,4,4-4H5Z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+                <ul>
+                    <li><a href="#">CDI</a></li>
+                    <li><a href="#">CDD</a></li>
+                    <li><a href="#">Stage</a></li>
+                    <li><a href="#">Interim</a></li>
+                    <li><a href="#">Plein de temps</a></li>
+                    <li><a href="#">Temps partiel</a></li>
+                </ul>>
+            </li>
+
+            <li>
+                <div class="filter-container"></div>
+                    <button id="flter-place" >
+                        <div class="filter-type-item">Dates</div>
+                        <div class="filter-type-icon">
+                            <svg viewBox="0 0 14 14" width="12px" height="12px" aria-hidden="true">
+                                <g>
+                                    <path d="M5,514,4,4,4-4H5Z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+                <ul>
+                    <li><a href="#">Cablanca</a></li>
+                    <li><a href="#">Rabat</a></li>
+                    <li><a href="#">Marrakech</a></li>
+                    <li><a href="#">Tanger</a></li>
+                    <li><a href="#">Agadir</a></li>
+                    <li><a href="#">Région Casablanca-Settat</a></li>
+                    <li><a href="#">Fez</a></li>
+                    <li><a href="#">Kénitra</a></li>
+                </ul>>
+            </li>
+
+            
+
+        </ul>
+    </div> -->
+
+
+    <div class="filter">
+        <ul class="filter-list">
+            <!-- Filtre Date -->
+            <li class="filter-item">
+                <button class="filter-button" id="filter-date">
+                    <span>Dates</span>
+                    <span class="filter-icon">▼</span>
+                </button>
+                <ul class="filter-dropdown">
+                    <li><a href="#">Dernières 24 heures</a></li>
+                    <li><a href="#">3 jours</a></li>
+                    <li><a href="#">7 derniers jours</a></li>
+                    <li><a href="#">Plus de 7 jours</a></li>
+                </ul>
+            </li>
+            <!-- Filtre Type de contrat -->
+            <li class="filter-item">
+                <button class="filter-button" id="filter-jobtype">
+                    <span>Types de contrat</span>
+                    <span class="filter-icon">▼</span>
+                </button>
+                <ul class="filter-dropdown">
+                    <li><a href="#">CDI</a></li>
+                    <li><a href="#">CDD</a></li>
+                    <li><a href="#">Stage</a></li>
+                    <li><a href="#">Interim</a></li>
+                    <li><a href="#">Plein de temps</a></li>
+                    <li><a href="#">Temps partiel</a></li>
+                </ul>
+            </li>
+            <!-- Filtre Lieu -->
+            <li class="filter-item">
+                <button class="filter-button" id="filter-place">
+                    <span>Lieu</span>
+                    <span class="filter-icon">▼</span>
+                </button>
+                <ul class="filter-dropdown">
+                    <li><a href="#">Casablanca</a></li>
+                    <li><a href="#">Rabat</a></li>
+                    <li><a href="#">Marrakech</a></li>
+                    <li><a href="#">Tanger</a></li>
+                    <li><a href="#">Agadir</a></li>
+                    <li><a href="#">Région Casablanca-Settat</a></li>
+                    <li><a href="#">Fez</a></li>
+                    <li><a href="#">Kénitra</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="clear-fix"></div>
+    </div>
+
+    <br>
+    <br>
+    <!-- Annonce -->
+    <!-- <div class="container">
+        <div class="announcement" onclick="showDetails(this)">
+            <div class="header">
+                <h2>Ingénieur Logiciel</h2>
+                <p class="company">Nom de la Société</p>
+                <p class="location">Ville - Pays</p>
+            </div>
+            <div class="skills">
+                <p>Compétences souhaitées :</p>
+                <ul>
+                    <li>Compétence 1</li>
+                    <li>Compétence 2</li>
+                    <li>Compétence 3</li>
+                </ul>
+            </div>
+        </div>
+        <div class="details" id="details">
+            <p>Détails de l'annonce...</p>
+        </div>
+    </div> -->
+    <div class="container">
+        <ul class="annonces-wrapper">
+            <li class="offer-wrapper">
+                <div class="wrapper">
+                    <div class="offer-details">
+                        <h2><a href="#">Fullstack Web Developer</a></h2>
+                        <div class="company-place-offer">
+                            <p class="companys-name">PROFFICIIS</p>
+                            <div class="companys-place">Rabat</div>
+                        </div>
+                    </div>
+                    <div class="offer-content">
+                        <ul class="soft-skills-list">
+                            <li class="soft-skill">Solid knowledge of <span>web technologies</span>, including HTML, CSS, and JavaScript.</li>
+                            <li class="soft-skill">Proven experience as a Fullstack developer with expertise in React.</li>
+                        </ul>
+                        <span class="offer-publication"> Published 5 days ago.</span><br />
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul class="annonces-wrapper">
+            <li class="offer-wrapper">
+                <div class="wrapper">
+                    <div class="offer-details">
+                        <h2><a href="#">FastAPI Developer -Remote</a></h2>
+                        <div class="company-place-offer">
+                            <p class="companys-name">Cognitus Consulting</p>
+                            <div class="companys-place">Remote</div>
+                        </div>
+                    </div>
+                    <div class="offer-content">
+                        <ul class="soft-skills-list">
+                            <li class="soft-skill">Minimum 3 years of experience in <span>backend</span>development.</li>
+                            <li class="soft-skill">Develop and maintain high-quality <span>backend</span> applications using FastAPI.</li>
+                            <li class="soft-skill">Proficiency in Docker is mandatory.</li>
+                        </ul>
+                        <span class="offer-publication"> Published 5 days ago.</span><br />
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul class="annonces-wrapper">
+            <li class="offer-wrapper">
+                <div class="wrapper">
+                    <div class="offer-details">
+                        <h2><a href="#">Front end Web Developer</a></h2>
+                        <div class="company-place-offer">
+                            <p class="companys-name">ADDWORK</p>
+                            <div class="companys-place">Casablanca</div>
+                        </div>
+                    </div>
+                    <div class="offer-content">
+                        <ul class="soft-skills-list">
+                            <li class="soft-skill">Using NextJS, Typescript, React Query, and MUI, this candidate will be able to translate user and business requirements into a design...</li>
+                        </ul>
+                        <span class="offer-publication"> Published 2 days ago.</span><br />
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    
+    <div class="clear-fix"></div>
+
+
+    <div class="details-container">
+        <div class="titre-poste">
+            <h2><span>Développeur Web Fullstack</span></h2>
+            <p>
+                <a href="https://ma.indeed.com/cmp/Profficiis/jobs/l-Rabat">PROFFICIIS
+                    <i class='bx bx-link-external'></i>
+                </a>
+            </p>
+            <div class="companys-place">Rabat</div>
+        </div>
+
+    </div>
+    
+
+
+</body>
+</html>
