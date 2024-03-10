@@ -1,0 +1,153 @@
+/* Styles pour le conteneur principal */
+.one {
+    position: relative;
+}
+
+/* Styles pour l'image */
+.one img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Styles pour le div avec la classe "two" */
+.two {
+    position: absolute;
+    top: 0;
+    left: 83px;
+    padding-left: 45px;
+    width: 32%;
+    height: 100%;
+    /* Ajoutez un fond semi-transparent */
+    z-index: 2; /* Assurez-vous que ce div soit au-dessus de l'image */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+/* Autres styles pour le div avec la classe "two" */
+.tree::after {
+    content: ''; /* Ajoutez le contenu souhaité ici */
+    display: block;
+    width: 75%; /* Ajustez la largeur de la ligne horizontale */
+    border-bottom: 1px solid rgb(33, 30, 30); /* Ajoutez la ligne horizontale */
+    margin-top: 0; /* Espacement entre le titre et la ligne */
+    margin-left:  30px;
+}
+
+
+
+.tree h3
+{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    color: #060606;
+    padding-bottom: 8px;
+    max-width: 100%;
+    margin-right: 100px;
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.tree {
+    width: 100%; /* Ajustez la largeur */
+    
+   
+}
+/* Style de la table */
+.custom-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 0;
+    
+    
+}
+
+/* Style pour les en-têtes de colonnes */
+.custom-table th {
+    border: 1px solid transparent;
+    padding: 8px;
+    text-align: left;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    
+}
+
+/* Style pour les cellules de données */
+.custom-table td {
+    border: 1px solid transparent;
+    padding: 8px;
+}
+
+/* Style pour les éléments <input> dans les cellules de données */
+.custom-table input {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    
+}
+
+/* Style pour les éléments <select> dans les cellules de données */
+.custom-table select {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.custom-table1 th {
+   
+    border: 1px solid transparent;
+    padding: 8px;
+    text-align: left;
+    background-color:transparent;
+    
+    
+}
+
+/* Style pour les cellules de données */
+.custom-table1 td {
+     border: 1px solid transparent; 
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Style pour les éléments <input> dans les cellules de données */
+.custom-table1 input {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+}
+.button-container {
+    margin: 15px 0;
+    margin-right: 90px;
+}
+
+.button-container button {
+    width: 50%;
+    margin-top: 25px;
+    padding: 10px;
+    margin-left: 110px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #022631, #064f74, #022631);
+    cursor: pointer;
+    transition: 0.3%;
+}
+
+.button-container button:hover {
+    background-image: linear-gradient(to right, #064f74, #022631, #064f74);
+}
+
+
+
